@@ -37,5 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_snowflake:
-    +materialized: view
+    +materialized: table  # Aplica a todos los modelos
+    example:
+      +materialized: table  # (opcional, si lo quieres mantener)
 
