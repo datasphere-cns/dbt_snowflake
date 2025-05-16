@@ -1,2 +1,3 @@
--- models/basic_select.sql
+{{ config(materialized='view') }}
+
 SELECT 'Hola desde dbt Cloud' AS mensaje;
